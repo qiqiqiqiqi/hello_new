@@ -14,14 +14,14 @@ void array_point()
 }
 //指针数组
 void point_array() {
-	int array0[] = { 100,200,300 };
-	int array1[] = { 400,500,600 };
-	int array2[] = { 700,800,900 };
+	int array0[] = { 100,200,300 };//空间连续
+	int array1[] = { 400,500,600 };//空间连续
+	int array2[] = { 700,800,900 };//空间连续
 	int* point[] = {array0,array1,array2};
-	printf("指针数组,valus={%d,%d,%d}\n", array0, array1, array2);
+	printf("指针数组,valus={%d,%d,%d}，size=%d\n", array0, array1, array2,sizeof(point));
 
 	for (int i = 0; i < 3; i++) {
-		printf("指针数组p=%d,index=%d,valus={%d,%d,%d}\n", *(point + i),i,(*(point + i))[0], (*(point + i))[1], (*(point + i))[2]);
+		printf("指针数组p=%d，*p=%d,index=%d,valus={%d,%d,%d}\n", (point + i) ,*(point + i),i,(*(point + i))[0], (*(point + i))[1], (*(point + i))[2]);
 	
 	}
 	

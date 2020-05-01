@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\HelloC",
-    "\\HelloC\\HelloC"
+    "\\struct\\struct"
   ],
-  "SelectedNode": "\\HelloC\\HelloC.sln",
+  "SelectedNode": "\\struct",
   "PreviewInSolutionExplorer": false
 }
