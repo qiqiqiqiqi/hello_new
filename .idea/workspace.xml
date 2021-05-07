@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a29fee11-c9f5-4ceb-b54b-73c577b1e698" name="Default Changelist" comment="" />
+    <list default="true" id="a29fee11-c9f5-4ceb-b54b-73c577b1e698" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,5 +35,15 @@
       <updated>1620356671697</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1780" y="394" key="Vcs.Push.Dialog.v2" timestamp="1620381897752">
+      <screen x="-2560" y="0" width="2560" height="1440" />
+    </state>
+    <state x="-1780" y="394" key="Vcs.Push.Dialog.v2/0.0.1440.900/-2560.0.2560.1440@-2560.0.2560.1440" timestamp="1620381897752" />
+    <state x="-1560" y="592" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1620387403438">
+      <screen x="-2560" y="0" width="2560" height="1440" />
+    </state>
+    <state x="-1560" y="592" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1440.900/-2560.0.2560.1440@-2560.0.2560.1440" timestamp="1620387403438" />
   </component>
 </project>
