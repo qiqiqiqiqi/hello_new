@@ -1,32 +1,53 @@
-#include<stdio.h>
+#include <stdio.h>
 #include "point_array.h"
-//Êý×éÖ¸Õë
+//æ•°ç»„çš„æŒ‡é’ˆ
+void array()
+{
+	int array[] = {100, 200, 300};
+	//æŒ‡é’ˆpæŒ‡å‘æ•°ç»„arrayçš„å¤´åœ°å€
+	int *p = array;
+	//ä¿®æ”¹é¦–åœ°å€çš„å€¼
+	*p = 400; //100=>400
+	for (int i = 0; i < 3; i++)
+	{
+		printf("æ•°ç»„æŒ‡é’ˆ,p=%d,index=%d,value=%d\n", p + i, i, *(p + i));
+	}
+}
+//æŒ‡é’ˆä¼˜å…ˆçº§ ()>[]>*
+
+//æŒ‡é’ˆæ•°ç»„
+void point_array()
+{
+	//array0 type int (*)[3]
+	int array0[] = {100, 200, 300}; //ç©ºé—´è¿žç»­
+	int array1[] = {400, 500, 600}; //ç©ºé—´è¿žç»­
+	int array2[] = {700, 800, 900}; //ç©ºé—´è¿žç»­
+	//æŒ‡é’ˆæ•°ç»„,å…ƒç´ æ˜¯æŒ‡é’ˆ
+	int *point[3] = {array0, array1, array2};
+	printf("æŒ‡é’ˆæ•°ç»„,valus={%d,%d,%d}ï¼Œsize=%d\n", array0, array1, array2, sizeof(point));
+
+	for (int i = 0; i < 3; i++)
+	{
+		printf("æŒ‡é’ˆæ•°ç»„,p=%dï¼Œ*p=%d,index=%d,values={%d,%d,%d}\n", (point + i), *(point + i), i, (*(point + i))[0], (*(point + i))[1], (*(point + i))[2]);
+	}
+}
+//æ•°ç»„æŒ‡é’ˆ(è¡ŒæŒ‡é’ˆ)
 void array_point()
 {
-	int array[] = { 100,200,300 };
-	//Ö¸ÕëpÖ¸ÏòÊý×éarrayµÄÍ·µØÖ·
-	int* p = array;
-	//ÐÞ¸ÄÊ×µØÖ·µÄÖµ
-	*p = 400;//100=>400
-	for (int i = 0; i < 3; i++) {
-		printf("Êý×éÖ¸Õëp=%d,index=%d,value=%d\n", p + i, i, *(p+i));
+	int a[2][3] = {{100, 200, 300}, {400, 500, 600}};
+	//point æ˜¯æ•°ç»„æŒ‡é’ˆ,æŒ‡å‘lengthä¸º3çš„ä¸€ç»´æ•°ç»„
+	int(*point)[3] = a; //å°†äºŒç»´æ•°ç»„çš„é¦–åœ°å€èµ‹å€¼ç»™point,a[0]/a[0][0]
+	for (int i = 0; i < sizeof(a) / sizeof(a[0]); i++)
+	{
+		int(*p)[3] = point; //point çš„ç±»åž‹æ˜¯int
+		printf("æ•°ç»„æŒ‡é’ˆ, p = %d,values={%d,%d,%d}\n", point, (*point)[0], (*point)[1], (*point)[2]);
+		point++; //+1åŽpæŒ‡å‘äº†a[1]
 	}
 }
-//Ö¸ÕëÊý×é
-void point_array() {
-	int array0[] = { 100,200,300 };//¿Õ¼äÁ¬Ðø
-	int array1[] = { 400,500,600 };//¿Õ¼äÁ¬Ðø
-	int array2[] = { 700,800,900 };//¿Õ¼äÁ¬Ðø
-	int* point[] = {array0,array1,array2};
-	printf("Ö¸ÕëÊý×é,valus={%d,%d,%d}£¬size=%d\n", array0, array1, array2,sizeof(point));
 
-	for (int i = 0; i < 3; i++) {
-		printf("Ö¸ÕëÊý×ép=%d£¬*p=%d,index=%d,valus={%d,%d,%d}\n", (point + i) ,*(point + i),i,(*(point + i))[0], (*(point + i))[1], (*(point + i))[2]);
-	
-	}
-	
-}
-int main(void) {
-	array_point();
+int main(void)
+{
+	array();
 	point_array();
+	array_point();
 }

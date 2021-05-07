@@ -1,3 +1,3 @@
 #pragma once
 
-void array_point();
+void array();

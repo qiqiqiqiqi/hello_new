@@ -2,12 +2,12 @@
 #include "student.h"
 using namespace std;
 Student::Student(int age) {
-	cout << "¹¹Ôì·½·¨" << endl;
+	cout << "æ„é€ æ–¹æ³•" << endl;
 	this->age = age;
 }
 Student::~Student() {
-	cout << "Îö¹¹·½·¨" << endl;
-}//Îö¹¹º¯Êı£¬ÓÃÓÚÊÍ·ÅÄÚ´æ
+	cout << "ææ„æ–¹æ³•" << endl;
+}//ææ„å‡½æ•°ï¼Œç”¨äºé‡Šæ”¾å†…å­˜
 
 void Student::setAge(int age) {
 	this->age = age;
