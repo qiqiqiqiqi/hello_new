@@ -39,7 +39,7 @@ void array_point()
 	int(*point)[3] = a; //将二维数组的首地址赋值给point,a[0]/a[0][0]
 	for (int i = 0; i < sizeof(a) / sizeof(a[0]); i++)
 	{
-		int(*p)[3] = point; //point 的类型是int
+		int(*p)[3] = point; //point 的类型 int(*)[]
 		printf("数组指针, p = %d,values={%d,%d,%d}\n", point, (*point)[0], (*point)[1], (*point)[2]);
 		point++; //+1后p指向了a[1]
 	}
