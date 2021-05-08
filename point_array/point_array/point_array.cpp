@@ -36,7 +36,7 @@ void array_point()
 {
 	int a[2][3] = {{100, 200, 300}, {400, 500, 600}};
 	//point  是数组指针,指向length为3的一维数组
-	int(*point)[3] = a; //将二维数组的首地址赋值给point,a[0]/a[0][0]
+	int(*point)[3] = a; //  将二维数组的首地址赋值给point,a[0]/a[0][0]
 	for (int i = 0; i < sizeof(a) / sizeof(a[0]); i++)
 	{
 		int(*p)[3] = point; // point 的类型 int(*)[]
