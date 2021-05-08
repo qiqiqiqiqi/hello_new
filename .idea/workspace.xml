@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a29fee11-c9f5-4ceb-b54b-73c577b1e698" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Instance/Instance/student.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Instance/Instance/student.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collections/collections/vector.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/collections/collections/vector.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extend/extend/extend.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/extend/extend/extend.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/struct/struct/struct.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/struct/struct/struct.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,11 +45,22 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="-1780" y="394" key="Vcs.Push.Dialog.v2" timestamp="1620387912813">
+    <state x="-1780" y="394" key="Vcs.Push.Dialog.v2" timestamp="1620443103431">
       <screen x="-2560" y="0" width="2560" height="1440" />
     </state>
-    <state x="-1780" y="394" key="Vcs.Push.Dialog.v2/0.0.1440.900/-2560.0.2560.1440@-2560.0.2560.1440" timestamp="1620387912813" />
+    <state x="-1780" y="394" key="Vcs.Push.Dialog.v2/0.0.1440.900/-2560.0.2560.1440@-2560.0.2560.1440" timestamp="1620443103431" />
     <state x="-1632" y="471" key="git4idea.merge.GitPullDialog" timestamp="1620387901920">
       <screen x="-2560" y="0" width="2560" height="1440" />
     </state>
