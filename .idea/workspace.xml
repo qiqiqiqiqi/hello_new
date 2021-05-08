@@ -37,10 +37,14 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1780" y="394" key="Vcs.Push.Dialog.v2" timestamp="1620381897752">
+    <state x="-1780" y="394" key="Vcs.Push.Dialog.v2" timestamp="1620387912813">
       <screen x="-2560" y="0" width="2560" height="1440" />
     </state>
-    <state x="-1780" y="394" key="Vcs.Push.Dialog.v2/0.0.1440.900/-2560.0.2560.1440@-2560.0.2560.1440" timestamp="1620381897752" />
+    <state x="-1780" y="394" key="Vcs.Push.Dialog.v2/0.0.1440.900/-2560.0.2560.1440@-2560.0.2560.1440" timestamp="1620387912813" />
+    <state x="-1632" y="471" key="git4idea.merge.GitPullDialog" timestamp="1620387901920">
+      <screen x="-2560" y="0" width="2560" height="1440" />
+    </state>
+    <state x="-1632" y="471" key="git4idea.merge.GitPullDialog/0.0.1440.900/-2560.0.2560.1440@-2560.0.2560.1440" timestamp="1620387901920" />
     <state x="-1560" y="592" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1620387403438">
       <screen x="-2560" y="0" width="2560" height="1440" />
     </state>
