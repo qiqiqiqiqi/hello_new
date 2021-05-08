@@ -8,7 +8,7 @@ Parent::~Parent() {
 	cout << "~parent" << endl;
 }
 void Child:: test() {
-	Parent::test();//相当于Java中super（）
+	Parent::test();//鐩稿綋浜嶫ava涓璼uper锛堬級
 	cout << "Child" << endl;
 }
 void Child::test1() {

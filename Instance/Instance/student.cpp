@@ -4,7 +4,7 @@ using namespace std;
 Student::Student(){
 	cout << "student()" << endl;
 }
-Student::~Student() {//ÒòÎªÊÇ¾²Ì¬µ¥ÀıÎŞ·¨ÊÍ·Å
+Student::~Student() {//å› ä¸ºæ˜¯é™æ€å•ä¾‹æ— æ³•é‡Šæ”¾
 	cout << "student()" << endl;
 }
 Student* Student::student ;
@@ -16,5 +16,5 @@ Student* Student::getInstance() {
 }
 
 void Student::study() {
-	cout << "Ñ§ÉúÑ§Ï°" << endl;
+	cout << "å­¦ç”Ÿå­¦ä¹ " << endl;
 }

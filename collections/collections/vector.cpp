@@ -4,7 +4,7 @@
 #include "main.h"
 using namespace std;
 /*
-Ë³ĞòÈİÆ÷
+é¡ºåºå®¹å™¨
 */
 void printVector(std::vector<int>& v)
 {
@@ -25,63 +25,63 @@ void printVectorByIterator(std::reverse_iterator<std::vector<int>::iterator>& rb
 }
 
 /*
-»ùÓÚÊı×éµÄ¶¯Ì¬ÈİÆ÷ vector
+åŸºäºæ•°ç»„çš„åŠ¨æ€å®¹å™¨ vector
 */
 void vectorDemo() {
-	//³¬¹ıÈİÆ÷ÈİÁ¿À©ÈİÔ­À´µÄ1/2
+	//è¶…è¿‡å®¹å™¨å®¹é‡æ‰©å®¹åŸæ¥çš„1/2
 	vector<int> v;
 	for (vector<int>::size_type i = 0; i < 7; i++) {
 		v.push_back(i);
 	}
 	/*
-	Ôö
+	å¢
 	*/
-	cout << "Ôö¼ÓÔªËØ" << endl;
-	//push_backÔÚÎ²¶Ë×·¼ÓÊı¾İ
+	cout << "å¢åŠ å…ƒç´ " << endl;
+	//push_backåœ¨å°¾ç«¯è¿½åŠ æ•°æ®
 	v.push_back(17);
 	printVector(v);
-	//insertÔÚµÚ¼¸¸öÔªËØÇ°²åÈë2Á½¸ö6
+	//insertåœ¨ç¬¬å‡ ä¸ªå…ƒç´ å‰æ’å…¥2ä¸¤ä¸ª6
 	v.insert(v.begin(), 2, 6);
 	printVector(v);
-	//insertÔÚµÚ¼¸¸öÔªËØÇ°²åÈëÊı×éµÚa£¨°üº¬£©¸öÔªËØµ½µÚb£¨²»°üº¬£©¸öÔªËØÖ®¼äµÄÔªËØ
+	//insertåœ¨ç¬¬å‡ ä¸ªå…ƒç´ å‰æ’å…¥æ•°ç»„ç¬¬aï¼ˆåŒ…å«ï¼‰ä¸ªå…ƒç´ åˆ°ç¬¬bï¼ˆä¸åŒ…å«ï¼‰ä¸ªå…ƒç´ ä¹‹é—´çš„å…ƒç´ 
 	int array[] = { 1,23,4,8 };
 	v.insert(v.begin(), (array + 1), (array + 3));
 	printVector(v);
-	//insertÔÚµÚ¼¸¸öÔªËØÇ°²åÈëÔªËØ
+	//insertåœ¨ç¬¬å‡ ä¸ªå…ƒç´ å‰æ’å…¥å…ƒç´ 
 	vector<int>::iterator it = v.insert(v.begin(), 1);
 	printVector(v);
 	/*
-	É¾
+	åˆ 
 	*/
-	cout << "É¾³ıÔªËØ" << endl;
-	//É¾³ıµÚ¼¸¸öÔªËØ
+	cout << "åˆ é™¤å…ƒç´ " << endl;
+	//åˆ é™¤ç¬¬å‡ ä¸ªå…ƒç´ 
 	vector<int>::iterator it2 = v.erase(it);
 	printVector(v);
-	//É¾³ıÄ³¶Î[begin,end)Ö®¼äµÄÔªËØ
+	//åˆ é™¤æŸæ®µ[begin,end)ä¹‹é—´çš„å…ƒç´ 
 	v.erase(it2, it2 + 2);
 	printVector(v);
-	//É¾³ıÎ²Êı¾İ
+	//åˆ é™¤å°¾æ•°æ®
 	v.pop_back();
 	printVector(v);
 	/*
-	¸Ä
-	£¨1£©a.assign(b.begin(), b.begin()+3); //bÎªÏòÁ¿£¬½«bµÄ0~2¸öÔªËØ¹¹³ÉµÄÏòÁ¿¸³¸øa
-	£¨2£©a.assign(4,2); //ÊÇaÖ»º¬4¸öÔªËØ£¬ÇÒÃ¿¸öÔªËØÎª2
+	æ”¹
+	ï¼ˆ1ï¼‰a.assign(b.begin(), b.begin()+3); //bä¸ºå‘é‡ï¼Œå°†bçš„0~2ä¸ªå…ƒç´ æ„æˆçš„å‘é‡èµ‹ç»™a
+	ï¼ˆ2ï¼‰a.assign(4,2); //æ˜¯aåªå«4ä¸ªå…ƒç´ ï¼Œä¸”æ¯ä¸ªå…ƒç´ ä¸º2
 	*/
-	/*cout << "ĞŞ¸ÄÔªËØ" << endl;
+	/*cout << "ä¿®æ”¹å…ƒç´ " << endl;
 	v.assign(1, 9);
 	printVector(v);*/
 	/*
-	²é
-	reference at(int pos):·µ»ØposÎ»ÖÃÔªËØµÄÒıÓÃ
-	reference front():·µ»ØÊ×ÔªËØµÄÒıÓÃ
-	reference back():·µ»ØÎ²ÔªËØµÄÒıÓÃ
-	iterator begin():·µ»ØÏòÁ¿Í·Ö¸Õë£¬Ö¸ÏòµÚÒ»¸öÔªËØ
-	iterator end():·µ»ØÏòÁ¿Î²Ö¸Õë£¬Ö¸ÏòÏòÁ¿×îºóÒ»¸öÔªËØµÄÏÂÒ»¸öÎ»ÖÃ
-	reverse_iterator rbegin():·´Ïòµü´úÆ÷£¬Ö¸Ïò×îºóÒ»¸öÔªËØ
-	reverse_iterator rend():·´Ïòµü´úÆ÷£¬Ö¸ÏòµÚÒ»¸öÔªËØÖ®Ç°µÄÎ»ÖÃ
+	æŸ¥
+	reference at(int pos):è¿”å›posä½ç½®å…ƒç´ çš„å¼•ç”¨
+	reference front():è¿”å›é¦–å…ƒç´ çš„å¼•ç”¨
+	reference back():è¿”å›å°¾å…ƒç´ çš„å¼•ç”¨
+	iterator begin():è¿”å›å‘é‡å¤´æŒ‡é’ˆï¼ŒæŒ‡å‘ç¬¬ä¸€ä¸ªå…ƒç´ 
+	iterator end():è¿”å›å‘é‡å°¾æŒ‡é’ˆï¼ŒæŒ‡å‘å‘é‡æœ€åä¸€ä¸ªå…ƒç´ çš„ä¸‹ä¸€ä¸ªä½ç½®
+	reverse_iterator rbegin():åå‘è¿­ä»£å™¨ï¼ŒæŒ‡å‘æœ€åä¸€ä¸ªå…ƒç´ 
+	reverse_iterator rend():åå‘è¿­ä»£å™¨ï¼ŒæŒ‡å‘ç¬¬ä¸€ä¸ªå…ƒç´ ä¹‹å‰çš„ä½ç½®
 	*/
-	cout << "²éÔªËØ" << endl;
+	cout << "æŸ¥å…ƒç´ " << endl;
 	int element = v.at(0);
 	cout << "v.at(0)=" << element << endl;
 	int front = v.front();
@@ -98,17 +98,17 @@ void vectorDemo() {
 	vector<int>::reverse_iterator rend = v.rend();
 	//cout << "v.rbegin()=" << *rbegin<<",*(rend-1)="<< *(rend+1) << endl;
 	/*
-	ÅÅĞò
+	æ’åº
 	*/
 	sort(v.begin(), v.end());
 	printVector(v);
 	/*
-	µ¹Ğò
+	å€’åº
 	*/
 	sort(v.rbegin(), v.rend());
 	printVector(v);
 	/*
-	·´×ª
+	åè½¬
 	*/
 	reverse(v.begin(), v.end());
 	printVector(v);
