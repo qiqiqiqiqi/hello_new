@@ -2,33 +2,37 @@
 #ifndef Student_H
 #define Student_H
 
-class Student {
-	friend void setAge(Student* student);//ÓÑÔªº¯Êý£¬·ÃÎÊÄ³¸öË½ÓÐ±äÁ¿
-	friend class InnerStudent ;//ÓÑÔªÀà£¬·ÃÎÊ¶à¸öË½ÓÐ±äÁ¿
-	private:
-		int age;
-		int scroe;
-	public :
-		Student(int age);
-		~Student();
-		void setAge(int age);
-		int getAge();
-		void setScroe(int scroe)const;//³£Á¿º¯Êý£¬²»¿ÉÒÔÐÞ¸ÄÀàÖÐµÄ±äÁ¿
-		int getScroe() {
-			return scroe;
-		}
+class Student
+{
+	//å®šä¹‰å‹å…ƒå‡½æ•°
+	friend void setAge(Student *student); //å‹å…ƒå‡½æ•°ï¼Œè®¿é—®æŸä¸ªç§æœ‰å˜é‡
+	friend class InnerStudent;			  //å‹å…ƒç±»ï¼Œè®¿é—®å¤šä¸ªç§æœ‰å˜é‡
+private:
+	int age;
+	int scroe;
 
-	protected:
-		int a;
-	
-
-};
-class InnerStudent {
 public:
-	void setAge(Student* student, int age) {
+	Student(int age);
+	~Student();
+	void setAge(int age);
+	int getAge();
+	void setScroe(int scroe) const; //å¸¸é‡å‡½æ•°ï¼Œä¸å¯ä»¥ä¿®æ”¹ç±»ä¸­çš„å˜é‡
+	int getScroe();
+
+protected:
+	int a;
+};
+
+//å®šä¹‰å‹å…ƒç±»
+class InnerStudent
+{
+public:
+	void setAge(Student *student, int age)
+	{
 		student->age = age;
 	}
-	void setScroe(Student* student, int scroe) {
+	void setScro(Student *student, int scroe)
+	{
 		student->scroe = scroe;
 	}
 };

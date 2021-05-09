@@ -12,6 +12,12 @@
   <component name="ChangeListManager">
     <list default="true" id="a29fee11-c9f5-4ceb-b54b-73c577b1e698" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class/class/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/class/class/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class/class/student.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/class/class/student.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class/class/student.h" beforeDir="false" afterPath="$PROJECT_DIR$/class/class/student.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/point_array/point_array/point_array" beforeDir="false" afterPath="$PROJECT_DIR$/point_array/point_array/point_array" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/struct/struct/struct.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/struct/struct/struct.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,8 +61,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="-2460" y="100" width="2360" height="1240" key="DiffContextDialog" timestamp="1620468565552">
+      <screen x="-2560" y="0" width="2560" height="1440" />
+    </state>
+    <state x="-2460" y="100" width="2360" height="1240" key="DiffContextDialog/0.0.1440.900/-2560.0.2560.1440@-2560.0.2560.1440" timestamp="1620468565552" />
     <state x="-1780" y="394" key="Vcs.Push.Dialog.v2" timestamp="1620443103431">
       <screen x="-2560" y="0" width="2560" height="1440" />
     </state>

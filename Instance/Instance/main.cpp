@@ -1,5 +1,5 @@
 #include<iostream>
-#include"student.h"
+#include"student.cpp"
 int main() {
 	Student* student = Student::getInstance();
 	Student* student1 = Student::getInstance();
