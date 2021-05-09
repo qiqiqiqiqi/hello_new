@@ -1,19 +1,31 @@
-#include"extend.h"
-#include<iostream>
+#include "extend.h"
+#include <iostream>
 using namespace std;
-void Parent::test() {
-	cout << "Parent" << endl;
+void Parent::test_static()
+{
+	cout << "Parent--test_static()" << endl;
 }
-Parent::~Parent() {
+void Parent::test_dynamic()
+{
+	cout << "Parent--test_dymamic()" << endl;
+}
+Parent::~Parent()
+{
 	cout << "~parent" << endl;
 }
-void Child:: test() {
-	Parent::test();//相当于Java中super（）
-	cout << "Child" << endl;
+void Child::test_static()
+{
+	Parent::test_static(); //相当于Java中super（）
+	cout << "Child--test_static()" << endl;
 }
-void Child::test1() {
-
+void Child::test_dynamic()
+{
+	cout << "Child--test_dynamic()" << endl;
 }
-Child::~Child() {
+void Child::test1()
+{
+}
+Child::~Child()
+{
 	cout << "~child" << endl;
 }

@@ -1,7 +1,8 @@
 #pragma once
-class Student {
+class Student
+{
 public:
 	int score;
-	int operator+(Student* student);//ÔËËã·ûÖØÔØ
-	int operator+(Student student);//ÖØÔØ
+	int operator+(Student *student); //è¿ç®—ç¬¦é‡è½½
+	int operator+(Student student);	 //é‡è½½
 };
