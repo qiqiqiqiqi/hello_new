@@ -7,6 +7,6 @@ using namespace std;
 
 
 int main() {
-	//vectorDemo();
-	listDemo();
+	vectorDemo();
+	//listDemo();
 }

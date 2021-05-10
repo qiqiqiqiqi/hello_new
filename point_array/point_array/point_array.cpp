@@ -33,6 +33,7 @@ void point_array()
 		//point 指针数组,指向头地址 -> int *[3]
 		//*(point+ i) 等价point[i] 元素,元素是指针  -> int*
 		printf("指针数组,p=%d，*p=%d,index=%d,values={%d,%d,%d}\n", point[i], *(point + i), i, /*  *(*(point + i)) */ (*(point + i))[0], point[i][1], *(*(point + i) + 2));
+		//point++ //报错,point是数组,指针可以++
 	}
 }
 //数组指针(行指针)

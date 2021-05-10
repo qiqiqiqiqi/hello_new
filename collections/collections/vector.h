@@ -23,7 +23,7 @@ void printVectorByIterator(std::reverse_iterator<std::vector<int>::iterator> &rb
 		cout << *rbegin << ",";
 	}
 	cout << "" << endl;
-}
+}  
 
 /*
 基于数组的动态容器 vector
@@ -93,7 +93,7 @@ void vectorDemo()
 
 	vector<int>::iterator begin = v.begin();
 	vector<int>::iterator end = v.end();
-	cout << "v.begin()=" << *begin << ",*(end-3)=" << *(end - 3) << endl;
+	cout << "v.begin()=" << *begin << ",*(end-3)=" << *(end - 1) << endl;
 
 	vector<int>::reverse_iterator rbegin;
 	printVectorByIterator(rbegin, v);
